@@ -1,0 +1,26 @@
+{
+  "name": "dconcloud-oss-demo",
+  "version": "1.0.0",
+  "description": "This project sets up a server which can query object from Alibaba's OSS to demonstrate the working of Object Storage and Node SDK for developers. It shows how to use the Access Keys generated in RAM to initialize the SDK.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhik-99/dconcloud-OSS-Demo.git"
+  },
+  "author": "Abhik Banerjee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhik-99/dconcloud-OSS-Demo/issues"
+  },
+  "homepage": "https://github.com/abhik-99/dconcloud-OSS-Demo#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "ali-oss": "^6.10.0",
+    "express": "^4.17.1"
+  }
+}
