@@ -14,7 +14,7 @@ app.engine('hbs', handlebars({
     extname: 'hbs',
     layoutsDir: __dirname + '/views/layouts'
     
-    }));
+}));
 
 
 app.get('/', listBuckets)

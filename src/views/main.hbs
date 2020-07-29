@@ -1,6 +1,6 @@
 			<div id="wrapper">
 					<header id="header">
-						<span class="avatar"><img src="images/abhik_banerjee.png" alt="ME" /></span>
+						<span class="avatar"><img src="https://test-bucket-abhik.oss-ap-south-1.aliyuncs.com/abhik_banerjee.png" alt="ME" /></span>
 						{{#if image}}
 						<h1>This concludes the DEMO of Alibaba Cloud OSS and RAM User Key Access from GCP.</h1>
 						{{else}}
@@ -31,21 +31,26 @@
 								{{/each}}
 							</ol>
 						</section>
+						<button><a href="/image">Get Image</a></button>
 						{{/if}}
 
 						{{#if image}}
 						<h3><b>You see what's happening here? </b> SDK is being used with the Access Keys to authenticate and then to 
 										get the image URL. The Image URL is passed in this template and gets rendered directly from OSS.
-									</h3>
+						</h3>
+						<button><a href="/">Home</a></button> <br><br>
 						<section class="thumbnails">
-									<a href="images/fulls/01.jpg">
-									<img src="images/thumbnails/01.jpg" alt="" />									
-									</a>
+							{{#each image}}
+							<a href="{{this.pic_url}}">
+							<img src="{{this.thumbnail_url}}" alt="" />
+							</a>
+							{{/each}}
 						</section>
+						
 						{{/if}}
 
 					</section>
-
+						
 					<footer id="footer">
 						<p>OSS Demo. For more awesome articles, go to <a href = "https://www.dconcloud.com/">DC on Cloud</a> </p>
 					</footer>
